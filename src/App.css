@@ -1,0 +1,102 @@
+.user-row {
+  color: #505050;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 24px;
+}
+
+.user-section {
+  margin-top: 10px;
+  box-shadow: 1px 1px 1px white;
+}
+
+.user-section {
+  background: white;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.inverse{
+  background: gray;
+  margin:0;
+  padding:32px 65px;
+  color:white;
+  font-size: 32px;
+}
+h3 {
+  color: #757575;
+  font-weight: bold;
+  margin: 40px 0;
+  padding-left: 10px;
+}
+
+h5 {
+  font-weight: bold;
+  padding: 12px 0;
+}
+
+.header-row {
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 16px 24px;
+  border-bottom: 1px solid lightgray;
+}
+
+.action-link {
+  cursor: pointer;
+  color: #909090;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-element{
+  border-radius: 0;
+}
+
+.add-button {
+  background: #EDEDED;
+  color: #757575;
+  border-radius: 0;
+  font-weight: bold;
+  height: 40px;
+}
+
+.new-user-form {
+  padding: 16px;
+  background: white;
+  margin: 0;
+}
+
+.edit-row {
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.new-user-form input {
+    padding: 20px;
+    border-radius: 0;
+}
+
+.new-user-form .form-group, .edit-row .form-group {
+    margin: 0;
+}
+
+.edit-row input{
+    border-radius: 0;
+}
+
+.edit-row button {
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.edit-row .save-button {
+    background: dodgerblue;
+}
