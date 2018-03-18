@@ -30,17 +30,6 @@ class App extends React.Component  {
           "phone": "0883424234"
         },
         {
-          "name": "Amit kumar",
-          "email": "amit.kumar@gmail.com",
-          "phone": "0882196345"
-
-        },
-        {
-        "name": "sajib",
-        "email": "sajib23@gmail.com",
-        "phone": "07845239845"
-        },
-        {
         "name": "max",
         "email": "maxpassion@gmail.com",
         "phone": "07834342653"
