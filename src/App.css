@@ -23,15 +23,15 @@
 .inverse{
   background: gray;
   margin:0;
-  padding:32px 65px;
+  padding:32px 100px;
   color:white;
   font-size: 32px;
 }
+
 h3 {
   color: #757575;
   font-weight: bold;
   margin: 40px 0;
-  padding-left: 10px;
 }
 
 h5 {

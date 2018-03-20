@@ -13,7 +13,7 @@ const UserRow = ({userId, name, email, phone, deleteUser, toggleForm}) => (
     </div>
     <div className="hidden-xs col-sm-2 action-link">
       <span data-user={userId} className="glyphicon glyphicon-pencil" onClick={(e) => toggleForm(e)}/> &nbsp; &nbsp; &nbsp; &nbsp;
-      <span data-id={userId} className="glyphicon glyphicon-trash" onClick={deleteUser} />
+	  <span data-id={userId} onClick={deleteUser}><i className="fas fa-trash" /></span>
     </div>
   </div>
 )

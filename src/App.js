@@ -12,6 +12,7 @@ class App extends React.Component  {
     this.addUser = this.addUser.bind(this)
     this.toggleForm = this.toggleForm.bind(this)
     this.updateUser = this.updateUser.bind(this)
+    this.sortUsers = this.sortUsers.bind(this)
     this.state ={
       user: {
         name: '',
@@ -116,6 +117,7 @@ class App extends React.Component  {
         },
       ],
       activeUser: 100,
+      order: false,
     }
 
   }
@@ -139,6 +141,27 @@ class App extends React.Component  {
     const userId = e.target.getAttribute('data-id')
     users.splice(userId, 1)
     this.setState({ users: users })
+  }
+
+  sortUsers() {
+      this.setState({ order: !this.state.order })
+      let users = this.state.users
+      if(!this.state.order) {
+          users = users.sort(function(a,b) {
+              let x = a['name']
+              let y = b['name']
+              return ((x > y) ? -1 : ((x < y) ? 1 : 0))
+          })
+      } else {
+          users = users.sort(function(a,b) {
+              let x = a['name']
+              let y = b['name']
+              return ((x < y) ? -1 : ((x > y) ? 1 : 0))
+          })
+      }
+      this.setState({ users: users })
+
+
   }
 
   toggleForm(e) {
@@ -205,7 +228,18 @@ class App extends React.Component  {
       <section className="user-section">
       <div className="row header-row">
         <div className="col-xs-4 col-sm-3">
-          Name
+          Name &nbsp;
+        {this.state.order &&
+            <span onClick={() => this.sortUsers()}>
+                <i  className="fas fa-arrow-up sort-arrow" />
+            </span>
+        }
+        {!this.state.order &&
+            <span onClick={() => this.sortUsers()}>
+            <i className="fas fa-arrow-down sort-arrow" />
+            </span>
+        }
+
         </div>
         <div className="col-xs-4 col-sm-3">
          Email
